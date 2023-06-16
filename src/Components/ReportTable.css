@@ -1,0 +1,118 @@
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  border: 2px solid rgb(94, 92, 92);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.table-parent-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 30px
+}
+
+.table-parent-container > h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #474545;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.table-container > div {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 80px;
+  margin-top: 40px;
+}
+
+.report-table {
+  width: 100%;
+  border-radius: inherit;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-table th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.report-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  text-align: center;
+}
+
+.report-table button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(149, 148, 148);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.generate-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+.generate-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .table-container > div {
+    padding: 20px;
+  }
+
+  .report-table th,
+  .report-table td {
+    padding: 8px;
+  }
+
+  .report-table button {
+    padding: 8px 16px;
+  }
+}
